@@ -1,0 +1,58 @@
+##################
+#  AWS
+##################
+aws_region = "us-east-1"
+aws_creds = "/path/to/.aws/credentials"
+aws_profile = "profile_name"
+aws_account = "421111111111"
+
+max_availability_zones = "2"
+
+aws_route53_zone = "ZXXXXXXXXXXXX"
+aws_cert_arn = "arn cert"
+aws_ec2_ssh_keypair = "ssh-key-jenkins"
+
+##################
+#  NAMESPACE
+##################
+label_namespace = "ex"
+label_name = "jenkins"
+label_stage = "dev"
+label_description = "Jenkins server as Docker container running on Elastic Benastalk"
+
+##################
+#  GITHUB
+##################
+jen_git_token = "your token"
+jen_git_org = "your org"
+jen_git_repo = "jenkins"
+jen_git_branch = "master"
+
+##################
+#  JENKINS MODULE
+##################
+jen_instance_type = "t2.medium"
+jen_build_image = "aws/codebuild/docker:17.09.0"
+jen_stack_name = "64bit Amazon Linux 2018.03 v2.10.0 running Docker 17.12.1-ce"
+jen_env_user = "administrator"
+jen_env_pass = "password123"
+jen_env_num_exec = 4
+
+##################
+#  DATAPIPELINE MODULE
+##################
+pipe_instance_type = "t2.small"
+pipe_email = "your@email.com"
+pipe_period = "12 hours"
+pipe_timeout = "60 minutes"
+
+
+##################
+#  VPC MODULE
+##################
+vpc_cidr = "10.0.0.0/16"
+
+##################
+#  SUBNET MODULE
+##################
+nat_enabled = "true"
